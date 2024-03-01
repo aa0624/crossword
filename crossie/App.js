@@ -69,6 +69,7 @@ export default function App() {
               key={colIndex}
               style={[
                 styles.cell,
+                { backgroundColor: cell.editable ? '#fff' : '#000' },
                 isCellSelected(rowIndex, colIndex) ? styles.selectedCell : {},
               ]}
               onPress={() => handleCellPress(rowIndex, colIndex)}
